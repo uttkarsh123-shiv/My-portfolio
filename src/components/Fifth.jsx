@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef , useState} from "react";
 import { gsap } from "gsap";
 import Border from "./Border";
 
@@ -13,7 +13,6 @@ const Contact = () => {
     const boxWidth = box.clientWidth;
     const boxHeight = box.clientHeight;
 
-    // Increased movement limit
     const maxMove = 50;
     const newX = Math.max(-maxMove, Math.min(maxMove, x - boxWidth / 2));
     const newY = Math.max(-maxMove, Math.min(maxMove, y - boxHeight / 2));
@@ -34,6 +33,16 @@ const Contact = () => {
       ease: "elastic.out(1, 0.4)",
     });
   };
+
+    const [hovered, setHovered] = useState(false);
+  
+    const handleMouseEnter1 = () => {
+      setHovered(true); 
+    };
+  
+    const handleMouseLeave2 = () => {
+      setHovered(false); 
+    };
 
   return (
     <div className="contact-page">
@@ -72,7 +81,15 @@ const Contact = () => {
             <p>Enter Message</p>
             <textarea placeholder="Your Message"></textarea>
           </div>
-          <button className="submit">Submit</button>
+          <button
+      className="submit">
+     <p> View my Resume</p>
+      <span
+        onMouseEnter={handleMouseEnter1}
+        onMouseLeave={handleMouseLeave2}
+        className={hovered ? "hovered" : ""} // Add a class when hovered
+      ></span>
+    </button>
         </div>
 
         <div className="impo-links">

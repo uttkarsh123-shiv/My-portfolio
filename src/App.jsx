@@ -8,15 +8,10 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
-// import { a } from "framer-motion/client";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 function App() {
-  const second = useRef();
-  const fourth = useRef();
   const third = useRef();
-  const fifth = useRef();
-
   const cursor = useRef(null);
   useGSAP(() => {
     var tl = gsap.timeline();
@@ -24,10 +19,10 @@ function App() {
       backgroundColor: "#111111",
       scrollTrigger: {
         trigger: third.current,
-        start: "35% 80%",
-        end: "36% 80%",
+        start: "53% 80%",
+        end: "54% 80%",
         scrub: 1,
-        // markers: true,
+        markers:true,
       }
     });
   }, []);
@@ -54,8 +49,6 @@ useEffect(()=>{
 )
 })
 
-
-
   return (
     <>
     <div className="noise"></div>
@@ -78,15 +71,12 @@ useEffect(()=>{
         }}
       ></div>
     <div className="main">
-
       <Homepage />
-      <Second ref={second} />
+      <Second />
       <Third ref={third} />
-      <Fourth ref={fourth} />
-      <Fifth ref={fifth} />
-
-
-      <p style={{textAlign:"center", position:"absolute",top:"99%", zIndex:"10"}}>Made with love</p>
+      <Fourth />
+      <Fifth />
+      {/* <p style={{textAlign:"center", position:"absolute",top:"99%", zIndex:"10"}}>Made with love</p> */}
     </div>
     </>
   );

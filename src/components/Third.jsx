@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Border from "./Border";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -34,7 +34,6 @@ const Experience = () => {
     return () => ctx.revert();
   }, []);
 
-  const [hoverIndex, setHoverIndex] = useState(null);
   const skills = [
     { 
       name: "Web dev", 
@@ -57,7 +56,25 @@ const Experience = () => {
       about: "Ensuring software quality through various testing methodologies, including unit, integration, and automated testing." 
     },
   ];
-  
+
+  const hoverBoxRefs = useRef([]);
+
+  const handleMouseEnter = (index) => {
+    gsap.to(hoverBoxRefs.current[index], {
+      height: "100%",
+      duration: 0.4,
+      ease: "power3.out",
+    });
+  };
+
+  const handleMouseLeave = (index) => {
+    gsap.to(hoverBoxRefs.current[index], {
+      height: "0%",
+      duration: 0.4,
+      ease: "power3.out",
+    });
+  };
+
   return (
     <div className="experience">
       <div className="heading2">
@@ -71,26 +88,23 @@ const Experience = () => {
             width: 0,
             height: "0.5px",
             background: "#d1cfcf",
-          }}/>
+          }}
+        />
       </div>
+
       <div className="content">
         <div className="right">
-          <div
-            className="scroll-box"
-            style={{
-              transform:
-                hoverIndex !== null
-                  ? `translateY(${hoverIndex * 100}%)`
-                  : "translateY(0%)",
-              opacity: hoverIndex !== null ? 1 : 0,
-            }}
-          ></div>
           {skills.map((item, index) => (
             <div
               key={index}
               className="right-elem"
-              onMouseEnter={() => setHoverIndex(index)}
-              onMouseLeave={() => setHoverIndex(null)}>
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={() => handleMouseLeave(index)}
+            >
+              <div 
+                className="hover-box" 
+                ref={(el) => (hoverBoxRefs.current[index] = el)}
+              ></div>
               <p>{item.name}</p>
               <p>{item.about}</p>
             </div>

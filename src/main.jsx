@@ -4,11 +4,8 @@ import App from './App.jsx'
 import SmoothScroll from './components/SmoothScroll.jsx'
 
 createRoot(document.getElementById('root')).render(
-  
   <SmoothScroll>
-  
-  <App />
-  
+  <App />  
   </SmoothScroll>
 
 )
