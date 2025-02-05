@@ -19,10 +19,9 @@ function App() {
       backgroundColor: "#111111",
       scrollTrigger: {
         trigger: third.current,
-        start: "53% 80%",
-        end: "54% 80%",
+        start: "52.5% 80%",
+        end: "53% 80%",
         scrub: 1,
-        markers:true,
       }
     });
   }, []);
