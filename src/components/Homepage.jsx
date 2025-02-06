@@ -24,10 +24,10 @@ const Homepage = () => {
       </div>
       <div className="items">
         <ul>
-          <li>Work</li>
-          <li>About</li>
-          <li >Contact</li>
-          <li><a href="">CV</a></li>
+          <li><a>Work</a></li>
+          <li><a>About</a></li>
+          <li ><a>Contact</a></li>
+          <li><a>CV</a></li>
         </ul>
       </div>
     </div>
