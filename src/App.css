@@ -202,25 +202,10 @@ a {
     left: 5%;
     font-size: 4em;
     color: #fff;
-    
-
     p{
       text-transform: capitalize;
       font-weight: 200;
     }
-  }
-
-  .heading .singleLine {
-    width: 100%;
-    height: 8vw;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .heading .singleLine .text {
-    position: absolute;
-    text-transform: uppercase;
-    color: #b9b9c2;
   }
 
   .content {
@@ -326,7 +311,7 @@ a {
   height: 150vh;
   position: relative;
   background: #111111;
-  color: #ffffff;
+  color: #c6c0c0;
   margin-top: 30vh;
 
   .heading2 {
@@ -334,19 +319,11 @@ a {
     position: relative;
     font-size: 6em;
     left: 5%;
-  }
+    font-weight: 400;
 
-  .singleLine2 {
-    width: 100%;
-    height: 8vw;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .text2 {
-    position: absolute;
-    font-family: "Raleway", serif;
-    color: #c4c5c9;
+    p{
+      font-weight: 500;
+    }
   }
     .right {
       width: 100%;
@@ -358,7 +335,7 @@ a {
         height: 25vh;
         padding-top: 6vh;
         padding-left: 10vw;
-        font-family: "Raleway", serif;
+        /* font-family: "Raleway", serif; */
         color: rgb(208, 203, 203);
         border-bottom: 0.5px solid #656565;
         overflow: hidden;
@@ -370,14 +347,16 @@ a {
 
         p:nth-of-type(1) {
           font-size: 2.2em;
-          font-weight: 400;
-          width: 40vh;
+          font-weight: 600;
+          width: 43vh;
+          color:rgb(123, 120, 120);
         }
 
         p:nth-of-type(2) {
           font-size: 1.3em;
           width: 30vw;
           font-weight: 400;
+          color: gray;
         }
       }
     }
@@ -413,7 +392,7 @@ a {
   left: 0;
   width: 100%;
   height: 0;
-  background: orangered;
+  background: rgb(255, 255, 255);
   opacity: 0.8;
   transform: translateY(-50%);
   transition: height 0.1s ease;
@@ -547,12 +526,12 @@ a {
   }
 
   .email {
-    padding-top: 3vh;
+    padding-top: 4vh;
     width: 80%;
   }
 
   .message {
-    padding-top: 3vh;
+    padding-top: 4vh;
     width: 80%;
     height: 30vh;
   }
@@ -589,7 +568,7 @@ a {
     height: 6vh;
     position: absolute;
     left: 0;
-    top: 100%;
+    top: 110%;
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     font-size: 1em;
@@ -597,10 +576,9 @@ a {
     border-radius: 50px;
   
     p{
-      /* position: absolute; */
       z-index: 99;
       font-weight: 200;
-      font-size: 1em;
+      font-size: 1.3em;
     }
   }
   
@@ -675,6 +653,7 @@ a {
   background-position: bottom bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  /* mix-blend-mode; */
 }
 
 

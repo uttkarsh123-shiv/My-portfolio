@@ -3,11 +3,11 @@ const Text = () => {
   const [hovered, setHovered] = useState(false);
 
   const handleMouseEnter = () => {
-    setHovered(true); 
+    setHovered(true);
   };
 
   const handleMouseLeave = () => {
-    setHovered(false); 
+    setHovered(false);
   };
   return (
     <>
@@ -15,7 +15,12 @@ const Text = () => {
         <div className="image"></div>
         <div className="content">
           <div className="left">
-            <p>A CREATIVE COLLECTIVE MADE TO UNLOCK YOUR BRAND’S POTENTIAL</p>
+            <p style={{ color: "white", position: "relative", top: "-5% " }}>
+              A CREATIVE
+            </p>
+            <p style={{ position: "relative", top: "-5%" }}>
+              COLLECTIVE MADE TO UNLOCK YOUR BRAND’S POTENTIAL
+            </p>
           </div>
           <div className="right">
             <div className="singleLine">
@@ -29,21 +34,21 @@ const Text = () => {
           </div>
         </div>
         <button
-      className="resume"
-      onClick={() =>
-        window.open(
-          "https://drive.google.com/file/d/1G8XmAmreJhqfdVNBblSePHZc3DOC2KFM/view?usp=drive_link",
-          "_blank"
-        )
-      }
-    >
-     <p> View my Resume</p>
-      <span
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        className={hovered ? "hovered" : ""} // Add a class when hovered
-      ></span>
-    </button>
+          className="resume"
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1G8XmAmreJhqfdVNBblSePHZc3DOC2KFM/view?usp=drive_link",
+              "_blank"
+            )
+          }
+        >
+          <p> View my Resume</p>
+          <span
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            className={hovered ? "hovered" : ""} // Add a class when hovered
+          ></span>
+        </button>
       </div>
       =
     </>

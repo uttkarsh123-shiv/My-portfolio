@@ -83,7 +83,7 @@ const Contact = () => {
           </div>
           <button
       className="submit">
-     <p> View my Resume</p>
+     <p> Submit</p>
       <span
         onMouseEnter={handleMouseEnter1}
         onMouseLeave={handleMouseLeave2}

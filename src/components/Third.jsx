@@ -1,38 +1,9 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useState, useRef } from "react";
-import Border from "./Border";
-
+import {  useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const x = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".experience",
-          start: "top 60%",
-          end: "50% 50%",
-          scrub: true,
-          once: true,
-        },
-      });
-      x.from(".text2", {
-        y: 100,
-        ease: "power4.out",
-        duration: 4,
-      });
-      x.from(".right-elem p", {
-        y: 130,
-        ease: "power4.out",
-        duration: 2,
-        stagger: 0.3,
-        once: true,
-      });
-    });
-
-    return () => ctx.revert();
-  }, []);
 
   const skills = [
     { 
@@ -78,18 +49,7 @@ const Experience = () => {
   return (
     <div className="experience">
       <div className="heading2">
-        <div className="singleLine2">
-          <div className="text2"><p>Core Competencies</p></div>
-        </div>
-        <Border
-          style={{
-            position: "relative",
-            bottom: "-3vh",
-            width: 0,
-            height: "0.5px",
-            background: "#d1cfcf",
-          }}
-        />
+        <p>Core Competencies</p>
       </div>
 
       <div className="content">

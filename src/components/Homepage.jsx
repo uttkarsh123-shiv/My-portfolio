@@ -24,9 +24,9 @@ const Homepage = () => {
       </div>
       <div className="items">
         <ul>
-          <li><a href="">Work</a></li>
-          <li><a>About</a></li>
-          <li ><a>Contact</a></li>
+          <li>Work</li>
+          <li>About</li>
+          <li >Contact</li>
           <li><a href="">CV</a></li>
         </ul>
       </div>
