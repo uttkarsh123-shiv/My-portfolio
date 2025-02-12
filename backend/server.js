@@ -13,7 +13,7 @@ const PORT = 5000;
 app.use(express.json());
 
 app.use(cors({
-  origin: 'https://udev-kohl.vercel.app/',  
+  origin: ["https://udev-kohl.vercel.app"],  
   methods: ['GET', 'POST', 'PUT', 'DELETE'],  
   credentials: true 
 }));
