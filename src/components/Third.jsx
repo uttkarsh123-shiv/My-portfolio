@@ -26,7 +26,12 @@ const Experience = () => {
       name: "Testing",
       about: "Ensuring software quality through various testing methodologies, including unit, integration, and automated testing." 
     },
+    { 
+      name: "Git",
+      about: "Version control and collaboration using Git, managing repositories, branching strategies, and efficient code tracking."
+    }
   ];
+  
 
   const hoverBoxRefs = useRef([]);
 
