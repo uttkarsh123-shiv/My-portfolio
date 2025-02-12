@@ -60,7 +60,7 @@ const Contact = () => {
     e.preventDefault();
     console.log("Submitting Data:", formData);
     try {
-      const response = await axios.post("http://localhost:5000", formData);
+      const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`, formData);
       Swal.fire({
         title: "Success!",
         text: response.data.message,
