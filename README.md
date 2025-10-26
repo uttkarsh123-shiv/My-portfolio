@@ -1,10 +1,10 @@
 <div align="center">
   <img src="https://github.com/iamvishalrathi/My-PortFolio-Website/blob/main/public/favicon-white.png" alt="Portfolio Logo" width="100" height="100"/>
   
-  # Vishal Kumar's Portfolio
+  # Uttkarsh's Portfolio
   
-  [![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://iamvishalkumar.me/)
-  [![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black)](https://github.com/iamvishalrathi/My-PortFolio-Website)
+  [![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://github.com/uttkarsh123-shiv)
+  [![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black)](https://github.com/uttkarsh123-shiv/My-portfolio)
 </div>
 
 ## 👋 Welcome
@@ -19,7 +19,7 @@ I'm a Full Stack Developer based in New Delhi and highly passionate about progra
 
 You can explore PortFolio live by visiting the website:
 
-[**Vishal Kumar - Preview the PortFolio**](https://iamvishalkumar.me/)
+[**Uttkarsh Singh - Preview the PortFolio**](https://github.com/uttkarsh123-shiv)
 
 ### 📸 Screenshot
 ![image](https://github.com/iamvishalrathi/My-PortFolio-Website/blob/main/public/live.png)
@@ -31,10 +31,10 @@ I'm always open to discussing new projects, creative ideas, or opportunities to 
 
 ### Contact Details
 
-- 📧 **Email:** [vishalkumar4work@gmail.com](mailto:vishalkumar4work@gmail.com)
+- 📧 **Email:** [uttkarshsingh450@gmail.com](mailto:uttkarshsingh450@gmail.com)
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by Vishal Kumar</sub>
+  <sub>Built with ❤️ by Uttkarsh Singh</sub>
 </div>

@@ -79,7 +79,7 @@ const Header = ({ isDark, toggleTheme }) => {
   return (
     <header className='header'>
       <nav className='nav container'>
-        <a href='#home' className='nav__logo'>Vishal Kumar</a>
+        <a href='#home' className='nav__logo'>Uttkarsh Singh</a>
         <div className={`nav__menu ${toggle ? 'show-menu' : ''}`}>
           <ul className='nav__list grid'>
             {navLinks.map(({ href, icon, text }) => (

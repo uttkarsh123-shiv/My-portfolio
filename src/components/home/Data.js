@@ -3,10 +3,10 @@ import React from 'react'
 const Data = ({ isDark }) => {
   return (
     <div className='home__data'>
-      <h1 className='home__title'>Vishal Kumar
+      <h1 className='home__title'>Uttkarsh Singh
         <img
           src={isDark ? '/favicon-white.png' : '/favicon.png'}
-          alt='Vishal Kumar'
+          alt='Uttkarsh Singh'
           className='home__title-img'
         />
       </h1>

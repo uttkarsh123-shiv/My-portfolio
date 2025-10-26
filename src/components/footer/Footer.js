@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
         <div className='footer__container container'>
-            <h1 className='footer__title'>Vishal Kumar</h1>
+            <h1 className='footer__title'>Uttkarsh Singh</h1>
 
             <ul className='footer__list'>
                 <li>
@@ -20,13 +20,13 @@ const Footer = () => {
             </ul>
 
             <div className='footer__social'>
-                  <a href='https://github.com/iamvishalrathi' className='footer__social-icon' target='_blank' rel="noreferrer">
+                  <a href='https://github.com/uttkarsh123-shiv' className='footer__social-icon' target='_blank' rel="noreferrer">
                     <i className='uil uil-github-alt'></i>
                   </a>
-                  <a href='https://www.linkedin.com/in/iamvishalrathi' className='footer__social-icon' target='_blank' rel="noreferrer">
+                  <a href='https://www.linkedin.com/in/uttkarsh-singh450/' className='footer__social-icon' target='_blank' rel="noreferrer">
                     <i className="uil uil-linkedin"></i>
                   </a>
-                  <a href='https://twitter.com/iamvishalrathi1' className='footer__social-icon' target='_blank' rel="noreferrer">
+                  <a href='https://leetcode.com/u/Uttkarsh_2103/' className='footer__social-icon' target='_blank' rel="noreferrer">
                     <i className='uil uil-twitter'></i>
                   </a>
             </div>

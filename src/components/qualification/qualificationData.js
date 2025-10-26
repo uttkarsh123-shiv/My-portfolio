@@ -3,19 +3,19 @@ export const educationData = [
         title: "BTech CSE",
         subtitle: "Maharaja Agrasen Institute of Technology, Delhi",
         period: "2022-2026",
-        cgpa: "8.398 CGPA"
+        cgpa: "7.942 CGPA"
     },
     {
         title: "Senior Secondary School",
-        subtitle: "Kendriya Vidyalaya, Delhi",
-        period: "2020-2022",
-        cgpa: "94% in CBSE Board"
+        subtitle: "Govt. Boys Sr. Sec. School, Delhi",
+        period: "2019-2021",
+        cgpa: "79.2% in CBSE Board"
     },
     {
         title: "Secondary School",
-        subtitle: "D.A.V. Centenary Public School, Delhi",
-        period: "2014-2020",
-        cgpa: "93.33% in CBSE Board"
+        subtitle: "A.V.N. Public School, Kotdwar",
+        period: "2017-2019",
+        cgpa: "80% in CBSE Board"
     }
 ];
 
@@ -49,9 +49,9 @@ export const experienceData = [
 export const achievementsData = [
     {
         title: "Hackathon Winner",
-        subtitle: "AMHacks1.0",
+        subtitle: "HackWithMAIT 5.0",
         period: "April 2025",
-        description: "Runner Up"
+        description: "1st Prize Winner",
     },
     {
         title: "Hackathon Finalist",
