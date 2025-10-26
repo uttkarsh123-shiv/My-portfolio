@@ -1,26 +1,36 @@
-import React from 'react'
-import './about.css'
-import AboutImg from '../../assets/profile.jpeg'
-import CV from '../../assets/Vishal_s_Resume_12_07_25.pdf'
-import Info from './Info'
+import React from "react";
+import "./about.css";
+import AboutImg from "../../assets/profile.jpeg";
+import CV from "../../assets/Vishal_s_Resume_12_07_25.pdf";
+// import Info from './Info'
 
 const About = () => {
   return (
-    <section className='about section' id='about'>
-      <h2 className='section__title'>About Me</h2>
-      <span className='section__subtitle'>My Introduction</span>
+    <section className="about section" id="about">
+      <h2 className="section__title">About Me</h2>
+      <span className="section__subtitle">My Introduction</span>
 
-      <div className='about__container container grid'>
-        <img src={AboutImg} alt='' className='about__img' />
-        <div className='about__data'>
-          <Info />
+      <div className="about__container container grid">
+        <img src={AboutImg} alt="" className="about__img" />
+        <div className="about__data">
+          {/* <Info /> */}
 
-          <p className='about__description'>I am currently pursuing a 
-            Bachelor's degree in Computer Science and Engineering, specialise in building dynamic, scalable applications and 
-            leveraging Gen AI for innovative solutions. As an active National Cadet Corps (NCC) cadet, I embrace leadership, teamwork, and community service. Additionally, I am a geopolitics enthusiast, exploring the intersection of technology, AI, and global affairs.
+          <p className="about__description">
+            Final-year Computer Science student with strong academic and
+            project-based experience in frontend, backend, and full-stack
+            Development. Skilled in JavaScript, React, Node.js, Express, and
+            MongoDB with solid knowledge of data structures and algorithms.
+            Experienced in solving complex problems, building responsive
+            interfaces, and improving solutions through hands-on practice.
           </p>
 
-          <a target="_blank" rel="noreferrer" href={CV} className='button button--flex'>View CV
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={CV}
+            className="button button--flex"
+          >
+            View CV
             <svg
               className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +60,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

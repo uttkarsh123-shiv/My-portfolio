@@ -1,3 +1,147 @@
+/* projectsSection.css (or work.css) */
+
+/* --- General Section Styling --- */
+
+.projects.section {
+    padding-top: 4rem; /* Adjust padding as needed */
+}
+
+.projects__container.container {
+    /* padding-top: 2.5rem; */
+    max-width: 524px; /* Optional: Constrain the max width of the section content */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Project Row Styling --- */
+
+.project__row {
+    display: flex;
+    align-items: center;
+    gap: 3rem; /* Space between image and content */
+    margin-bottom: 5rem; /* Space between rows */
+    background-color: var(--container-color); /* Assumes you have theme variables */
+    padding: 2rem;
+    border-radius: 1rem;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* --- Image and Container Sizing (To reduce image size and give content more space) --- */
+
+.project__image-container {
+    /* Set container to 30% of the row width */
+    flex: 0 0 30%; 
+    max-width: 30%; 
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.project__img {
+    /* The image inside the container takes 100% of the container's width */
+    width: 100%; 
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project__img:hover {
+    transform: scale(1.03);
+}
+
+/* --- Content Styling --- */
+
+.project__content {
+    /* Content takes the remaining 70% of the row width */
+    flex: 1; 
+    max-width: 70%;
+}
+
+.project__title {
+    font-size: var(--h3-font-size, 1.25rem);
+    margin-bottom: 0.5rem;
+    color: var(--title-color, hsl(250, 8%, 15%));
+}
+
+.project__description {
+    margin-bottom: 1.5rem;
+    color: var(--text-color, hsl(250, 8%, 45%));
+}
+
+.project__links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.project__github{
+    color: var(--text-color, hsl(250, 8%, 45%));
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+/* --- Alternating Layout Logic --- */
+
+/* Project 1 (Index 0): Image on RIGHT, Content on LEFT 
+   This is achieved by reversing the order of flex items (image and content) */
+.project__row-right {
+    flex-direction: row-reverse;
+}
+
+/* Project 2 (Index 1): Image on LEFT, Content on RIGHT 
+   This is the default 'row' direction */
+.project__row-left {
+    flex-direction: row;
+}
+
+
+@media screen and (max-width: 992px) {
+    .project__row {
+        gap: 2rem;
+        margin-bottom: 4rem;
+        padding: 1.5rem;
+    }
+
+    .project__image-container {
+        /* Adjustments for medium screens if needed */
+        flex-basis: 35%;
+        max-width: 35%;
+    }
+
+    .project__content {
+        max-width: 65%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project__row,
+    .project__row-right,
+    .project__row-left {
+        /* Stack the image and content vertically on small screens */
+        flex-direction: column; 
+        text-align: center;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .project__image-container,
+    .project__content {
+        /* Allow both to take up most of the width when stacked */
+        flex-basis: auto;
+        max-width: 80%; /* Ensure content is still centered and readable */
+    }
+
+    .project__links {
+        justify-content: center; /* Center buttons when stacked */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project__image-container,
+    .project__content {
+        max-width: 90%;
+    }
+}
+
 .work__filters {
     display: flex;
     justify-content: center;
@@ -18,24 +162,12 @@
 .work__item:hover {
     background-color: var(--title-color);
     color: var(--container-color);
+    
 }
 
 .work__container {
     grid-template-columns: repeat(1, max-content);
     width: 300px;
-    justify-content: center;
-}
-
-.swiper-pagination-bullet {
-    background-color: (--text-color) !important;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: var(--title-color) !important;
-}
-
-.swiper-slide {
-    display: flex;
     justify-content: center;
 }
 
@@ -57,6 +189,7 @@
 
 .work__img {
     width: 315px;
+    height: 200px;
     border-radius: 1rem;
     margin-bottom: var(--mb-1);
 }
@@ -90,45 +223,6 @@
     color: var(--container-color);
 }
 
-.swiper-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    /* Align items at the start */
-    position: relative;
-    gap: 0;
-    /* Ensure there's no gap between items */
-    width: 40%;
-    /* Reduce the width to 50% */
-    margin: 0 auto;
-    /* Center the container horizontally */
-}
-
-.swiper-button-left,
-.swiper-button-right {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: var(--button-background-color);
-    color: var(--button-icon-color);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 10;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-    &:hover {
-        background-color: var(--button-hover-background-color);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }
-}
 
 body {
     --button-background-color: rgba(0, 0, 0, 0.5);

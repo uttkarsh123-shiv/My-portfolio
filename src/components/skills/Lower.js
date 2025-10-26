@@ -12,26 +12,26 @@ const Lower = () => {
                         <div className='skills__data'>
                             <i className='bx bx-badge-check'></i>
                             <div>
-                                <h3 className='skills__name'>Java</h3>
-                                <span className='skills__level'>Intermediate</span>
-                            </div>
-                        </div>
-
-                        <div className='skills__data'>
-                            <i className='bx bx-badge-check'></i>
-                            <div>
-                                <h3 className='skills__name'>Java</h3>
-                                <span className='skills__level'>Intermediate</span>
-                            </div>
-                        </div>
-
-                        <div className='skills__data'>
-                            <i className='bx bx-badge-check'></i>
-                            <div>
                                 <h3 className='skills__name'>C/C++</h3>
+                                <span className='skills__level'>Intermediate</span>
+                            </div>
+                        </div>
+                        <div className='skills__data'>
+                            <i className='bx bx-badge-check'></i>
+                            <div>
+                                <h3 className='skills__name'>JavaScript</h3>
+                                <span className='skills__level'>Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div className='skills__data'>
+                            <i className='bx bx-badge-check'></i>
+                            <div>
+                                <h3 className='skills__name'>Java</h3>
                                 <span className='skills__level'>Basic</span>
                             </div>
                         </div>
+
 
                         <div className='skills__data'>
                             <i className='bx bx-badge-check'></i>
@@ -53,15 +53,15 @@ const Lower = () => {
                         <div className='skills__data'>
                             <i className='bx bx-badge-check'></i>
                             <div>
-                                <h3 className='skills__name'>Git</h3>
+                                <h3 className='skills__name'>Git/GitHub</h3>
                                 <span className='skills__level'>Intermediate</span>
                             </div>
                         </div>
                         <div className='skills__data'>
                             <i className='bx bx-badge-check'></i>
                             <div>
-                                <h3 className='skills__name'>Linux</h3>
-                                <span className='skills__level'>Beginner</span>
+                                <h3 className='skills__name'>Web Performance Optimization</h3>
+                                <span className='skills__level'>Intermediate</span>
                             </div>
                         </div>
 
@@ -76,7 +76,7 @@ const Lower = () => {
                         <div className='skills__data'>
                             <i className='bx bx-badge-check'></i>
                             <div>
-                                <h3 className='skills__name'>Vercel</h3>
+                                <h3 className='skills__name'>Figma</h3>
                                 <span className='skills__level'>Intermediate</span>
                             </div>
                         </div>

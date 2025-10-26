@@ -12,14 +12,6 @@ const Upper = () => {
                         <div className='skills__data'>
                             <i className='bx bx-badge-check'></i>
                             <div>
-                                <h3 className='skills__name'>Next.js</h3>
-                                <span className='skills__level'>Intermediate</span>
-                            </div>
-                        </div>
-
-                        <div className='skills__data'>
-                            <i className='bx bx-badge-check'></i>
-                            <div>
                                 <h3 className='skills__name'>React.js</h3>
                                 <span className='skills__level'>Intermediate</span>
                             </div>
@@ -53,14 +45,6 @@ const Upper = () => {
                             <i className='bx bx-badge-check'></i>
                             <div>
                                 <h3 className='skills__name'>NodeJS</h3>
-                                <span className='skills__level'>Advance</span>
-                            </div>
-                        </div>
-
-                        <div className='skills__data'>
-                            <i className='bx bx-badge-check'></i>
-                            <div>
-                                <h3 className='skills__name'>Express/NestJS</h3>
                                 <span className='skills__level'>Intermediate</span>
                             </div>
                         </div>
@@ -68,19 +52,27 @@ const Upper = () => {
                         <div className='skills__data'>
                             <i className='bx bx-badge-check'></i>
                             <div>
-                                <h3 className='skills__name'>MongoDB/PostgreSQL</h3>
+                                <h3 className='skills__name'>Express.Js</h3>
                                 <span className='skills__level'>Intermediate</span>
                             </div>
                         </div>
 
                         <div className='skills__data'>
+                            <i className='bx bx-badge-check'></i>
+                            <div>
+                                <h3 className='skills__name'>MongoDB/SQL/Redis</h3>
+                                <span className='skills__level'>Intermediate</span>
+                            </div>
+                        </div>
+
+                        {/* <div className='skills__data'>
                             <i className='bx bx-badge-check'></i>
                             <div>
                                 <h3 className='skills__name'>
                                     Prisma ORM</h3>
                                 <span className='skills__level'>Beginner</span>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

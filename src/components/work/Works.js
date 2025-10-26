@@ -1,120 +1,56 @@
-import React, { useEffect, useState } from 'react'
-import { projectsData, projectsNav } from './Data'
-import WorksItems from './WorksItems'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/autoplay'  // Import autoplay styles
-import { Pagination, Autoplay } from 'swiper'  // Import Autoplay module
+import React from 'react';
+import { projectsData } from './Data'; // Import your data
+import './work.css'; // Import your CSS
 
 const Works = () => {
-  const [item, setItem] = useState({ name: 'all' })
-  const [projects, setProjects] = useState([])
-  const [active, setActive] = useState(0)
+    return (
+        <section className="projects section" id="projects">
+            <div className="projects__container container">
+                {projectsData.map((project, index) => {
+                    // Projects with an EVEN index (0, 2, 4...) will be aligned RIGHT.
+                    // Projects with an ODD index (1, 3, 5...) will be aligned LEFT.
+                    const isAlignedRight = index % 2 === 0;
 
-  // Remove unused swiperRef
-  const [swiperInstance, setSwiperInstance] = useState(null)  // State to store Swiper instance
+                    return (
+                        <div
+                            key={project.id}
+                            className={`project__row ${isAlignedRight ? 'project__row-right' : 'project__row-left'}`}
+                        >
+                            {/* Project Image */}
+                            <div className="project__image-container">
+                                <img src={project.image} alt={project.title} className="project__img"  />
+                            </div>
 
-  useEffect(() => {
-    if (item.name === 'all') {
-      setProjects(projectsData)
-    } else {
-      const newProjects = projectsData.filter((project) => {
-        return project.category.toLowerCase() === item.name
-      })
-      setProjects(newProjects)
-    }
-  }, [item])
+                            {/* Project Content */}
+                            <div className="project__content">
+                                <h3 className="project__title">{project.title}</h3>
+                                <p className="project__description">{project.description}</p>
+                                
+                                <div className="project__links">
+                                    <a 
+                                        href={project.link} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="project__link button button--flex"
+                                    >
+                                        Live Demo <i className="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                    <a 
+                                        href={project.github} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="project__github button--flex"
+                                    >
+                                        <i className="uil uil-github-alt project__github-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+        </section>
+    );
+};
 
-  const handleClick = (e, index) => {
-    setItem({ name: e.target.textContent.toLowerCase() })
-    setActive(index)
-    swiperInstance?.slideTo(0)
-  }
-
-  const onSwiper = (swiper) => {
-    setSwiperInstance(swiper)  // Store Swiper instance in state
-  }
-
-  return (
-    <div className=''>
-      <div className="work__filters">
-        {projectsNav.map((item, index) => {
-          return (
-            <span
-              onClick={(e) => {
-                handleClick(e, index)
-              }}
-              className={`${active === index ? 'active-work' : ''
-                } work__item`}
-              key={index}
-            >
-              {item.name}
-            </span>
-          )
-        })}
-      </div>
-
-      <div className="swiper-container">
-        <button
-          className="swiper-button-left"
-          onClick={() => swiperInstance?.slidePrev()}
-        >
-          <i className="bx bx-chevron-left"></i> {/* Boxicon left arrow */}
-        </button>
-
-        <Swiper
-          className="work__container"
-          loop={true}
-          grabCursor={true}
-          pagination={{
-            clickable: true,
-          }}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false, // Keep autoplay even after user interaction
-          }}
-          speed={1000}  // Increase transition speed to 500ms
-          breakpoints={{
-            576: {
-              slidesPerView: 1,
-            },
-            758: {
-              slidesPerView: 1,
-              spaceBetween: 48,
-            },
-            768: {
-              slidesPerView: 1,
-              spaceBetween: 38,
-            },
-            992: {
-              slidesPerView: 1,
-            },
-          }}
-          modules={[Pagination, Autoplay]}  // Include Autoplay module
-          onSwiper={onSwiper}  // Store the Swiper instance
-        >
-          {projects.map((item) => {
-            return (
-              <SwiperSlide
-                key={item.id}
-                style={{ display: 'flex', justifyContent: 'center' }}
-              >
-                <WorksItems item={item} key={item.id} />
-              </SwiperSlide>
-            )
-          })}
-        </Swiper>
-
-        <button
-          className="swiper-button-right"
-          onClick={() => swiperInstance?.slideNext()}
-        >
-          <i className="bx bx-chevron-right"></i> {/* Boxicon right arrow */}
-        </button>
-      </div>
-    </div>
-  )
-}
-
-export default Works
+export default Works;
