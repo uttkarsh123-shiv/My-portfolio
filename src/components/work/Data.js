@@ -9,7 +9,7 @@ export const projectsData = [
         image: Work1,
         title: 'SoundNest',
         category: 'major',
-        link: 'https://podtales.vercel.app/',
+        link: 'https://sound-nest-eight.vercel.app/',
         github: 'https://github.com/uttkarsh123-shiv/SoundNest',
         description: 'An AI-powered SaaS podcast streaming platform by Next.js.'
     },
@@ -18,7 +18,7 @@ export const projectsData = [
         image: Work2,
         title: 'InivisiCrypt',
         category: 'major',
-        link: 'https://next-role-prep.vercel.app/',
+        link: '',
         github: 'https://github.com/uttkarsh123-shiv/InvisiCrypt',
         description: 'A Secret Message hiding into plain text using Encryption + Stegnography.'
     },
