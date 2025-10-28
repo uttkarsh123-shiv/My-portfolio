@@ -21,10 +21,6 @@ You can explore PortFolio live by visiting the website:
 
 [**Uttkarsh Singh - Preview the PortFolio**](https://github.com/uttkarsh123-shiv)
 
-### 📸 Screenshot
-![image](https://github.com/iamvishalrathi/My-PortFolio-Website/blob/main/public/live.png)
-
-
 ## 📫 Get in Touch
 
 I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
