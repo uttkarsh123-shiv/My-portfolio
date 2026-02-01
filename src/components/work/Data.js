@@ -1,9 +1,18 @@
 import Work1 from '../../assets/work/work1.png'
 import Work2 from '../../assets/work/work2.png'
 import Work3 from '../../assets/work/work3.png'
-
+import Work4 from '../../assets/work/work4.png'
 
 export const projectsData = [
+    {
+        id: 1,
+        image: Work4,
+        title: 'FlexShare',
+        category: 'major',
+        link: 'https://flex-share.vercel.app/',
+        github: 'https://github.com/uttkarsh123-shiv/FlexShare',
+        description: 'A fast, modern file platform built with React and Node.js to upload, convert, and securely share files with password protection and expiration.'
+    },
     {
         id: 1,
         image: Work1,

@@ -1,6 +1,3 @@
-// import React from 'react'
-import CIcon from '@coreui/icons-react';
-import * as icon from '@coreui/icons';
 import './footer.css'
 
 const Footer = () => {
@@ -29,8 +26,7 @@ const Footer = () => {
                     <i className="uil uil-linkedin"></i>
                   </a>
                   <a href='https://leetcode.com/u/Uttkarsh_2103/' className='footer__social-icon' target='_blank' rel="noreferrer">
-                    {/* <i className='uil uil-twitter'></i> */}
-                    <CIcon icon={icon.cibLeetcode} size="xl"/>
+                    <i className="uil uil-brackets-curly"></i>
                   </a>
             </div>
             <span className='footer__copy'>&#169; All rights reserved</span>

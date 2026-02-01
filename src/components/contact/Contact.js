@@ -149,7 +149,7 @@ const Contact = () => {
 
               <h3 className='contact__card-title'>Email</h3>
               <span className='contact__card-data'>uttkarshsingh450@gmail.com</span>
-              <a href='mailto: vishalkumar4work@gmail.com' target="_blank" rel="noreferrer" className='contact__button'> Write me{" "}
+              <a href='mailto: uttkarshsingh450@gmail.com' target="_blank" rel="noreferrer" className='contact__button'> Write me{" "}
                 <i className='bx bx-right-arrow-alt contact__button-icon'></i></a>
             </div>
 
@@ -157,7 +157,7 @@ const Contact = () => {
               <i className='bx bxl-whatsapp contact__card-icon'></i>
 
               <h3 className='contact__card-title'>Whatsapp</h3>
-              <span className='contact__card-data'>+91 95821 89958</span>
+              <span className='contact__card-data'>+91 9582189958</span>
               <a href='https://web.whatsapp.com/' target="_blank" rel="noreferrer" className='contact__button'> Write me
                 <i className='bx bx-right-arrow-alt contact__button-icon'></i></a>
             </div>

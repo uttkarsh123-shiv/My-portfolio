@@ -10,16 +10,17 @@ const Lower = () => {
                 <div className='skills__box'>
                     <div className='skills__group'>
                         <div className='skills__data'>
-                            <i className='bx bx-badge-check'></i>
-                            <div>
-                                <h3 className='skills__name'>C/C++</h3>
-                                <span className='skills__level'>Intermediate</span>
-                            </div>
-                        </div>
-                        <div className='skills__data'>
-                            <i className='bx bx-badge-check'></i>
+                               <i className='bx bx-badge-check'></i>
                             <div>
                                 <h3 className='skills__name'>JavaScript</h3>
+                                <span className='skills__level'>Intermediate</span>
+                            </div>
+
+                        </div>
+                        <div className='skills__data'>
+                                                     <i className='bx bx-badge-check'></i>
+                            <div>
+                                <h3 className='skills__name'>C/C++</h3>
                                 <span className='skills__level'>Intermediate</span>
                             </div>
                         </div>

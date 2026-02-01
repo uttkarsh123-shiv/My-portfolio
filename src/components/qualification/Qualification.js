@@ -1,10 +1,7 @@
-import React, { useState } from 'react'
 import './qualification.css'
-import { tabsData } from './qualificationData'
+import { educationData } from './qualificationData'
 
 const Qualification = () => {
-  const [toggleState, setToggleState] = useState(2);
-
   // Content component to avoid repetition
   const QualificationContent = ({ data }) => (
     <div>
@@ -57,38 +54,21 @@ const Qualification = () => {
 
   return (
     <section className='qualification section' id='qualifications'>
-      <h2 className='section__title'>Qualification</h2>
-      <span className='section__subtitle'>My Personal Journey</span>
+      <h2 className='section__title'>Education</h2>
+      <span className='section__subtitle'>My Academic Journey</span>
 
       <div className='qualification__container container'>
-        <div className='qualification__tabs'>
-          {tabsData.map(tab => (
-            <div
-              key={tab.id}
-              className={`qualification__button ${toggleState === tab.id ? 'qualification__active' : ''} button--flex`}
-              onClick={() => setToggleState(tab.id)}
-            >
-              <i className={`uil ${tab.icon} qualification__icon`}></i>{"  "}{tab.name}
-            </div>
-          ))}
-        </div>
-
         <div className='qualification__sections'>
-          {tabsData.map(tab => (
-            <div
-              key={tab.id}
-              className={`qualification__content ${toggleState === tab.id ? 'qualification__content-active' : ''}`}
-            >
-              {tab.data.map((item, index) => (
-                <QualificationItem
-                  key={index}
-                  data={item}
-                  index={index}
-                  total={tab.data.length}
-                />
-              ))}
-            </div>
-          ))}
+          <div className='qualification__content qualification__content-active'>
+            {educationData.map((item, index) => (
+              <QualificationItem
+                key={index}
+                data={item}
+                index={index}
+                total={educationData.length}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
